@@ -3,7 +3,6 @@ function ReviewCard(props) {
 	return (
 		<div className="ReviewCard">
 			{listOfReviews.map((review) => {
-                console.log(review)
 				return (
 					<li key={review.review_id}>
 						<h4>{review.title}</h4>
