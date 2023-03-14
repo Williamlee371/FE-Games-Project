@@ -13,6 +13,7 @@ function App() {
 			<Reviews
 				listOfReviews={listOfReviews}
 				setListOfReviews={setListOfReviews}
+
 			/>
 		</div>
 	);

@@ -5,7 +5,7 @@ function ReviewCard(props) {
 			{listOfReviews.map((review) => {
 				return (
 					<li key={review.review_id}>
-						<h4>{review.title}</h4>
+						<h5>{review.title}</h5>
                         <img src={review.review_img_url} alt=""></img>
                         <p>{review.owner}</p>
 					</li>

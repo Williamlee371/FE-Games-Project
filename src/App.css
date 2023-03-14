@@ -30,3 +30,7 @@
   height: 80%;
   width: 80%;
 }
+
+.ReviewCard li{
+  list-style-type: none;
+}
