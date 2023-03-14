@@ -1,7 +1,23 @@
-function Reviews(){
-    return (<section>
+import ListOfReviews from "./List_Of_Reviews";
+import { Routes, Route } from "react-router-dom";
 
-    </section>)
+function Reviews(props) {
+	const { listOfReviews, setListOfReviews } = props;
+	return (
+		<section className="Reviews">
+			<Routes>
+				<Route
+					path="/"
+					element={
+						<ListOfReviews
+							listOfReviews={listOfReviews}
+							setListOfReviews={setListOfReviews}
+						/>
+					}
+				/>
+			</Routes>
+		</section>
+	);
 }
 
-export default Reviews
+export default Reviews;

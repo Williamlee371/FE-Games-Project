@@ -1,5 +1,5 @@
 function Header(){
-    return(<header>
+    return(<header className="Header">
         <h1>Nc-Games</h1>
     </header>)
 }

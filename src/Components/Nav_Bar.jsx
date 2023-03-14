@@ -1,8 +1,10 @@
+import { Link } from "react-router-dom";
+
 function NavBar() {
 	return (
-		<form className="nav_Bar">
+		<form className="NavBar">
 			<h2>Nav Bar</h2>
-			<button>All Reviews</button>
+			<Link to="/">All Reviews</Link>	
 		</form>
 	);
 }
