@@ -4,10 +4,15 @@ const apiUrl = axios.create({
 	baseURL: "https://be-games-project.onrender.com/api",
 });
 
-function getAllReviews() {
+export const getAllReviews=()=> {
 	return apiUrl.get("/reviews").then(({ data }) => {
 		return data;
 	});
 }
 
-export default getAllReviews;
+export const getReviewById=(review_id)=>{
+	return apiUrl.get(`/reviews/${review_id}`).then(({data})=>{
+		return data;
+	})
+ }
+ 
