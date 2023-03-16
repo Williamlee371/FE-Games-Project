@@ -8,13 +8,16 @@ function ReviewCard(props) {
 	const handleItemClick=(event)=>{
 		navigate(`/Review/${event.currentTarget.id}`)
 	}
- 
+
+	
 	return (
 		<div className="ReviewCard">
 			{listOfReviews.map((review) => {
 				return (
 					<li key={review.review_id} onClick={handleItemClick} id={review.review_id}>
 						<h5>{review.title}</h5>
+						<button>Increase Vote</button>
+						<button>Decrease Vote</button>
                         <img src={review.review_img_url} alt=""></img>
                         <p>{review.owner}</p>
 					</li>

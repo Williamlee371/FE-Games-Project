@@ -16,3 +16,8 @@ export const getReviewById=(review_id)=>{
 	})
  }
  
+export const increaseVoteOnReview=(review_id)=>{
+	return apiUrl.patch(`/reviews/${review_id}`,{inc_votes:1}).then(({data})=>{
+		return data
+	})
+}
