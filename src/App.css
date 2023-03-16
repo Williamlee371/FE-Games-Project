@@ -26,29 +26,36 @@
 	margin: 10px;
 }
 
-.ReviewCard img{
-  height: 80%;
-  width: 80%;
+.ReviewCard img {
+	width: 30vw;
 }
 
-.ReviewCard li{
-  list-style-type: none;
-}
-
-.SingleReviewCard li{
+.ReviewCard li {
 	list-style-type: none;
 }
 
-.Comments{
+.SingleReview ul{
+	padding-left: 0px;
+}
+
+.SingleReviewCard li {
+	list-style-type: none;
+}
+
+.Comments {
 	border: 1px solid black;
 }
 
-.Comment_Card{
-	border:1px solid black;
+.Comment_Card {
+	border: 1px solid black;
 	padding: 10px;
 	margin: 10px;
 }
 
-.Comment_Card li{
+.Comments ul{
+	padding-left: 0px;
+}
+
+.Comment_Card li {
 	list-style-type: none;
 }
