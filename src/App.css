@@ -1,36 +1,51 @@
 .App {
 	text-align: center;
-}
-
-.Reviews {
+ }
+ 
+ .Reviews {
 	border: 1px solid black;
 	padding: 10px;
 	margin: 10px;
-}
-
-.ListOfReviews {
+ }
+ 
+ .ListOfReviews {
 	border: 1px solid black;
 	padding: 10px;
 	margin: 10px;
-}
-
-.NavBar {
+ }
+ 
+ .NavBar {
 	border: 1px solid black;
 	padding: 10px;
 	margin: 10px;
-}
-
-.Header {
+ }
+ 
+ .Header {
 	border: 1px solid black;
 	padding: 10px;
 	margin: 10px;
-}
-
-.ReviewCard img{
+ }
+ 
+ .ReviewCard img{
   height: 80%;
   width: 80%;
-}
+ }
+ 
+ .ListOfReviews ul{
+	list-style-type: none;
+	padding: 0px;
+ }
+ 
+ .SingleReviewCard{
+	border: 1px solid black;
+ }
 
-.ReviewCard li{
-  list-style-type: none;
-}
+ .SingleReview ul{
+	list-style-type: none;
+	padding:0px;
+ }
+ 
+ .ReviewBlock{
+	border: 1px solid black;
+ }
+ 
