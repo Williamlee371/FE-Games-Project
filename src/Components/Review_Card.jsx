@@ -3,8 +3,8 @@ import { useNavigate } from "react-router-dom";
 function ReviewCard(props) {
 	const { listOfReviews } = props;
 	const navigate=useNavigate();
-
-	function handleItemClick(event){
+  
+	const handleItemClick=(event)=>{
 		navigate(`/Review/${event.currentTarget.id}`)
 	}
 

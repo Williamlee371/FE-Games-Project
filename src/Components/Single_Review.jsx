@@ -1,7 +1,8 @@
-import { useEffect, useState } from "react";
 import { getReviewById } from "../API";
 import { useParams } from "react-router-dom";
 import SingleReviewCard from "./Single_Review_Card";
+import {useState,useEffect} from 'react'
+import Comments from "./Comments";
 
 
 function SingleReview() {
@@ -24,6 +25,7 @@ function SingleReview() {
                    <h4>Review</h4>
                    <ul>
                        <SingleReviewCard singleReview={singleReview} setSingleReview={setSingleReview}/>
+                       <Comments review_id={review_id}/>
                    </ul>
                </>
            )}
