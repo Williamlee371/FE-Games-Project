@@ -4,7 +4,6 @@ function ReviewCard(props) {
 	const { listOfReviews } = props;
 	const navigate=useNavigate();
 
-
 	const handleItemClick=(event)=>{
 		navigate(`/Review/${event.currentTarget.id}`)
 	}
