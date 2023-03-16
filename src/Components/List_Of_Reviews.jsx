@@ -1,10 +1,11 @@
 import ReviewCard from "./Review_Card";
-import getAllReviews from "../API";
+import {getAllReviews} from "../API";
 import { useEffect,useState } from "react";
 
-function ListOfReviews(props) {
+function ListOfReviews() {
 	const [loading,setLoading]=useState(false);
-	const { listOfReviews, setListOfReviews } = props;
+	const [ listOfReviews, setListOfReviews ] = useState([]);
+	
 	useEffect(() => {
 		setLoading(true)
 		getAllReviews().then((response) => {

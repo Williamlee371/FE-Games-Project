@@ -34,3 +34,21 @@
 .ReviewCard li{
   list-style-type: none;
 }
+
+.SingleReviewCard li{
+	list-style-type: none;
+}
+
+.Comments{
+	border: 1px solid black;
+}
+
+.Comment_Card{
+	border:1px solid black;
+	padding: 10px;
+	margin: 10px;
+}
+
+.Comment_Card li{
+	list-style-type: none;
+}
