@@ -17,7 +17,15 @@ export const getReviewById=(review_id)=>{
  }
  
 export const increaseVoteOnReview=(review_id)=>{
-	return apiUrl.patch(`/reviews/${review_id}`,{inc_votes:1}).then(({data})=>{
+const inputData={inc_votes:1}
+	return apiUrl.patch(`/reviews/${review_id}`,inputData).then(({data})=>{
+		return data	
+	})
+}
+
+export const decreaseVoteOnReview=(review_id)=>{
+	const inputData={inc_votes:-1}
+	return apiUrl.patch(`/reviews/${review_id}`,inputData).then(({data})=>{
 		return data
 	})
 }

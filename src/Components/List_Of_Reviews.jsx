@@ -18,7 +18,7 @@ function ListOfReviews() {
 		<div className="ListOfReviews">{loading?<h3>Loading...</h3>:<>
 			<h4>Reviews</h4>
 			<ul>
-				<ReviewCard listOfReviews={listOfReviews} />
+				<ReviewCard listOfReviews={listOfReviews} setListOfReviews={setListOfReviews} />
 			</ul></>}
 		</div>
 	);

@@ -23,7 +23,7 @@ function SingleReview() {
                <>
                    <h4>Review</h4>
                    <ul>
-                       <SingleReviewCard singleReview={singleReview}/>
+                       <SingleReviewCard singleReview={singleReview} setSingleReview={setSingleReview}/>
                    </ul>
                </>
            )}
