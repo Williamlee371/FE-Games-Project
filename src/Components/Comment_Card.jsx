@@ -4,10 +4,9 @@ function CommentCard(props) {
 
 	return (
 		<div >
-            <p>Comments</p>
 			{commentList.map((comment) => {
 				return (
-                    <div className="Comment_Card">
+                    <div className="CommentCard">
 					<li key={comment.comment_id}>
 						<p>{comment.body}</p>
                         <p>{comment.author}</p>
