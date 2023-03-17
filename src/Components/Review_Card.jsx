@@ -3,11 +3,11 @@ import { useNavigate } from "react-router-dom";
 function ReviewCard(props) {
 	const { listOfReviews } = props;
 	const navigate=useNavigate();
-
+  
 	const handleItemClick=(event)=>{
 		navigate(`/Review/${event.currentTarget.id}`)
 	}
- 
+
 	return (
 		<div className="ReviewCard">
 			{listOfReviews.map((review) => {
