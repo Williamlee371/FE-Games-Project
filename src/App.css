@@ -46,7 +46,7 @@
 	border: 1px solid black;
 }
 
-.Comment_Card {
+.CommentCard {
 	border: 1px solid black;
 	padding: 10px;
 	margin: 10px;
@@ -56,6 +56,10 @@
 	padding-left: 0px;
 }
 
-.Comment_Card li {
+.CommentCard li {
 	list-style-type: none;
+}
+
+.CommentForm input{
+width: 80vw;
 }
